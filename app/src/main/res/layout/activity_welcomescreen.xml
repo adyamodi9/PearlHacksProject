@@ -6,13 +6,94 @@
     android:layout_height="match_parent"
     tools:context="com.example.adya.whiteumbrella.Welcomescreen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="151dp"
+            android:background="#000000"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:text="white umbrella"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/white_umbrella_logo"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <ImageButton
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="76dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:background="#000000"
+            app:srcCompat="@mipmap/button_open" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/login"
+            android:layout_alignLeft="@+id/login"
+            android:layout_alignStart="@+id/login"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:fontFamily="sans-serif" />
+
+        <ImageButton
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignTop="@+id/login"
+            android:background="#000000"
+            app:srcCompat="@mipmap/button_open" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/register"
+            android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp"
+            android:layout_toEndOf="@+id/login"
+            android:layout_toRightOf="@+id/login"
+            android:textColor="#FFFFFF"
+            android:text="Sign up"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
