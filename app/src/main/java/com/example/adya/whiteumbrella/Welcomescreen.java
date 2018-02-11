@@ -24,7 +24,7 @@ public class Welcomescreen extends AppCompatActivity {
         ImageButton register = (ImageButton) findViewById(R.id.register);
         register.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                setContentView(R.layout.activity_login_page);
+                setContentView(R.layout.activity_registration_page);
             }
         });
     }
