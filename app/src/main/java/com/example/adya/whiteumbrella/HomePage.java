@@ -37,6 +37,12 @@ public class HomePage extends AppCompatActivity {
                 startActivityForResult(myIntent3, 0);
             }
         });
-
+        Button donatebutton = findViewById(R.id.donate);
+        donatebutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                android.content.Intent myIntent7 = new android.content.Intent(view.getContext(), DonationsPage.class);
+                startActivityForResult(myIntent7, 0);
+            }
+        });
     }
 }

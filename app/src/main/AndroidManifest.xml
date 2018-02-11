@@ -42,7 +42,8 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".UserView" />
-        <activity android:name=".ForumPage"></activity>
+        <activity android:name=".ForumPage" />
+        <activity android:name=".DonationsPage"></activity>
     </application>
 
 </manifest>
