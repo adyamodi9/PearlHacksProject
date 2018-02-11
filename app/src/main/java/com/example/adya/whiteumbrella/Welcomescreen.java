@@ -16,9 +16,8 @@ public class Welcomescreen extends AppCompatActivity {
         ImageButton login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                setContentView(R.layout.activity_login_page);
-                //android.content.Intent myIntent = new android.content.Intent(view.getContext(), LoginPage.class);
-                //startActivityForResult(myIntent, 0);
+                android.content.Intent myIntent = new android.content.Intent(view.getContext(), LoginPage.class);
+                startActivityForResult(myIntent, 0);
             }
         });
         ImageButton register = (ImageButton) findViewById(R.id.register);
