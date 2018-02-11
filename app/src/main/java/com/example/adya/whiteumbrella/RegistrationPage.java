@@ -16,9 +16,8 @@ public class RegistrationPage extends AppCompatActivity {
         Button but = findViewById(R.id.button);
         but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                setContentView(R.layout.activity_welcomescreen);
-                //android.content.Intent myIntent = new android.content.Intent(view.getContext(), LoginPage.class);
-                //startActivityForResult(myIntent, 0);
+                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), Map.class);
+                startActivityForResult(myIntent2, 0);
             }
         });
     }

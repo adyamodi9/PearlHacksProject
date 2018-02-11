@@ -16,9 +16,8 @@ public class LoginPage extends AppCompatActivity {
         ImageButton logo = findViewById(R.id.log);
         logo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                setContentView(R.layout.activity_registration_page);
-                //android.content.Intent myIntent = new android.content.Intent(view.getContext(), LoginPage.class);
-                //startActivityForResult(myIntent, 0);
+                android.content.Intent myIntent1 = new android.content.Intent(view.getContext(), MapsActivity.class);
+                startActivityForResult(myIntent1, 0);
             }
         });
     }
