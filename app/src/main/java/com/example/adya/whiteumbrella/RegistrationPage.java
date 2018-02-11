@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class RegistrationPage extends AppCompatActivity {
 
@@ -16,7 +15,7 @@ public class RegistrationPage extends AppCompatActivity {
         Button but = findViewById(R.id.button);
         but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), Map.class);
+                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), HomePage.class);
                 startActivityForResult(myIntent2, 0);
             }
         });

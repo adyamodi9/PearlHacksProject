@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PearlHacksProject.iml" filepath="$PROJECT_DIR$/PearlHacksProject.iml" />
+      <module fileurl="file://C:\Users\adya\StudioProjects\PearlHacksProject\PearlHacksProject.iml" filepath="C:\Users\adya\StudioProjects\PearlHacksProject\PearlHacksProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\adya\StudioProjects\PearlHacksProject\app\app.iml" filepath="C:\Users\adya\StudioProjects\PearlHacksProject\app\app.iml" />
     </modules>
   </component>
 </project>

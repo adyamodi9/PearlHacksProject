@@ -16,7 +16,7 @@ public class LoginPage extends AppCompatActivity {
         ImageButton logo = findViewById(R.id.log);
         logo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent1 = new android.content.Intent(view.getContext(), MapsActivity.class);
+                android.content.Intent myIntent1 = new android.content.Intent(view.getContext(), HomePage.class);
                 startActivityForResult(myIntent1, 0);
             }
         });

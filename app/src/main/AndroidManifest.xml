@@ -25,7 +25,7 @@
         </activity>
         <activity android:name=".RegistrationPage" />
         <activity android:name=".LoginPage" />
-        <activity android:name=".Map" />
+        <activity android:name=".HomePage" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
