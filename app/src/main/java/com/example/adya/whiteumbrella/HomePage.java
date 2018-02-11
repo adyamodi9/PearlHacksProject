@@ -26,14 +26,14 @@ public class HomePage extends AppCompatActivity {
         Button forumbutton = findViewById(R.id.button3);
         forumbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), Welcomescreen.class);
+                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), ForumPage.class);
                 startActivityForResult(myIntent2, 0);
             }
         });
         Button profilebutton = findViewById(R.id.button4);
         profilebutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent3 = new android.content.Intent(view.getContext(), ViewUser.class);
+                android.content.Intent myIntent3 = new android.content.Intent(view.getContext(), UserView.class);
                 startActivityForResult(myIntent3, 0);
             }
         });

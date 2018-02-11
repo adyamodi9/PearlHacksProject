@@ -68,12 +68,9 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView6"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginRight="44dp"
+            android:layout_below="@+id/textView4r"
+            android:layout_toEndOf="@+id/imageView6r"
+            android:layout_toRightOf="@+id/imageView6r"
             android:text="TextView"
             android:textColor="@android:color/white"
             tools:layout_editor_absoluteX="167dp"
@@ -113,19 +110,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="406dp"
-        android:backgroundTint="@color/cardview_shadow_end_color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/button_open" />
-
     <TextView
         android:id="@+id/textView6r"
         android:layout_width="wrap_content"
@@ -133,14 +117,20 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="34dp"
-        android:layout_marginEnd="37dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="sans-serif"
         android:text="Home"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton" />
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toEndOf="@+id/homebutton"
+        app:layout_constraintTop_toBottomOf="@+id/homebutton"
+        app:layout_constraintVertical_bias="1.0" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -148,6 +138,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="126dp"
+        android:background="@mipmap/button_open"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/button_open" />
 
 
 </android.support.constraint.ConstraintLayout>
