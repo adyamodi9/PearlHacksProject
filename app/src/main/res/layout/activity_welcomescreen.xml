@@ -7,11 +7,14 @@
     tools:context="com.example.adya.whiteumbrella.Welcomescreen">
 
     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#000000"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="48dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView"
@@ -28,21 +31,6 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="40sp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_above="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
-            android:cropToPadding="false"
-            android:scaleType="fitCenter"
-            android:visibility="visible"
-            app:srcCompat="@mipmap/white_umbrella_logo"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="278dp" />
 
         <ImageButton
             android:id="@+id/login"
@@ -86,13 +74,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/register"
-            android:layout_marginLeft="58dp"
-            android:layout_marginStart="58dp"
-            android:layout_toEndOf="@+id/login"
-            android:layout_toRightOf="@+id/login"
-            android:textColor="#FFFFFF"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
             android:text="Sign up"
+            android:textColor="#FFFFFF"
             android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@mipmap/beterrrr" />
 
     </RelativeLayout>
 
