@@ -30,7 +30,7 @@ public class HomePage extends AppCompatActivity {
         Button profilebutton = findViewById(R.id.button4);
         profilebutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent3 = new android.content.Intent(view.getContext(), MapsActivity.class);
+                android.content.Intent myIntent3 = new android.content.Intent(view.getContext(), ViewUser.class);
                 startActivityForResult(myIntent3, 0);
             }
         });

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adya.whiteumbrella.RegistrationPage"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView6r"
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/female_profile"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView4r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/imageView6r"
+            android:layout_toRightOf="@+id/imageView6r"
+            android:fontFamily="sans-serif"
+            android:text="User Name: Adya Modi"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="155dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4r"
+            android:layout_alignRight="@+id/textView4r"
+            android:layout_below="@+id/imageView6r"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:inputType="textNoSuggestions|numberDecimal"
+            android:singleLine="false"
+            android:text="Recent Activity:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="66dp"
+            tools:text="email: amodi@example.com" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="263dp"
+            android:layout_height="206dp"
+            android:layout_alignEnd="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_below="@+id/imageView6r"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="* 02/01/2018 ...... 6 hours with The Atlanta Union Missions                  * 01/25/2018 ...... Volunteered at Atlanta Women's Home"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginTop="66dp"
+        android:fontFamily="sans-serif"
+        android:text="Zip Code: 30323"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="406dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/button_open" />
+
+    <TextView
+        android:id="@+id/textView6r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="sans-serif"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</android.support.constraint.ConstraintLayout>
