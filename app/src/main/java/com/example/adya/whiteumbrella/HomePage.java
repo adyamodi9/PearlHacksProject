@@ -21,14 +21,14 @@ public class HomePage extends AppCompatActivity {
             }
         });
         Button forumbutton = findViewById(R.id.button3);
-        mapbutton.setOnClickListener(new View.OnClickListener() {
+        forumbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), Welcomescreen.class);
                 startActivityForResult(myIntent2, 0);
             }
         });
         Button profilebutton = findViewById(R.id.button4);
-        mapbutton.setOnClickListener(new View.OnClickListener() {
+        profilebutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 android.content.Intent myIntent3 = new android.content.Intent(view.getContext(), MapsActivity.class);
                 startActivityForResult(myIntent3, 0);
