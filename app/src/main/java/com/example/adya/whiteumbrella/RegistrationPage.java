@@ -13,10 +13,10 @@ public class RegistrationPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
 
-        Button but = findViewById(R.id.button);
+        ImageButton but = findViewById(R.id.imageButton);
         but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), Map.class);
+                android.content.Intent myIntent2 = new android.content.Intent(view.getContext(), MapsActivity.class);
                 startActivityForResult(myIntent2, 0);
             }
         });
