@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.Stack;
+
 public class HomePage extends AppCompatActivity {
+    Stack<Spots> spots = new Stack<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +37,6 @@ public class HomePage extends AppCompatActivity {
                 startActivityForResult(myIntent3, 0);
             }
         });
+
     }
 }
